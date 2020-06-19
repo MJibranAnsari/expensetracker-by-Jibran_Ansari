@@ -21,8 +21,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-     - name: Install node.js
+    - name: Install node.js
       uses: actions/setup-node@v2-beta
       with:
         node-version: 12
@@ -41,3 +40,9 @@ jobs:
     - name: Run Surge  
       run: surge ./build myexpensetrackerapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
       
+  
+      
+
+  
+  
+  
